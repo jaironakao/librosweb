@@ -11,15 +11,16 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
+  <div class="field form-group">
+
+    <%= f.label :Nombre %><br>
+    <%= f.text_field :name, class:"form-control", :placeholder => "Nombre" %>
   </div>
   <div class="field">
-    <%= f.label :age %><br>
-    <%= f.number_field :age %>
+    <%= f.label :Edad %><br>
+    <%= f.number_field :age, class:"form-control", :placeholder => "Ingrese solo numeros" %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit value='Guardar', class:"btn btn-primary btn-lg" %>
   </div>
 <% end %>

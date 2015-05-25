@@ -27,13 +27,13 @@
 			</ul>
 	</div>
 	
-	<div class="central1 col-md-10" > 
+	<div class="central1" > 
 	
-		<div class="col-md-8">
+		<div class="central2 col-md-8">
 			<%= yield %>
 		</div>	
 
-		<div class="acomodar-derecha col-md-3">
+		<div class="acomodar-derecha col-md-4">
 			<%= image_tag("railslibro.png")  %>
 			<div class="textoderecha">
 				<h4 class="colorrojo"> Titulo</h4>
@@ -59,7 +59,22 @@
 		
 			</div>
 		</div>
+		<div id="disqus_thread"></div>
+<script type="text/javascript">
+   /* * * CONFIGURATION VARIABLES * * */
+   var disqus_shortname = 'libroswebjairo';
+   
+   /* * * DON'T EDIT BELOW THIS LINE * * */
+   (function() {
+       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+       dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+       (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+   })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 	</div>
+
+
 	
 </body>
 </html>
