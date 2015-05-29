@@ -10,6 +10,11 @@
   <%= @person.age %>
 </p>
 
+<p>
+  <strong>Pais:</strong>
+  <%= @person.country.namec %>
+</p>
+
 <%= link_to 'Editar', edit_person_path(@person) , class:"btn btn-warning btn-lg" %> |
 <%= link_to 'Atraz', people_path, class:"btn btn-success btn-lg" %>
 
