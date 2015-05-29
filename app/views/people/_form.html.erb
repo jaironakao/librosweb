@@ -21,9 +21,16 @@
     <%= f.number_field :age, class:"form-control", :placeholder => "Ingrese solo numeros" %>
   </div>
   <div class="field form-group">
-   <%= f.label :Ciudad %><br>
+   <%= f.label :Pais %><br>
    <%= f.collection_select :country_id, Country.order(:namec),:id,:namec, include_blank: true%>
- </div>
+   </div>
+   <div class="field form-group">
+    <%= f.label :sexo %><br>
+    <%= f.radio_button(:sex, "Masculino") %>
+    <%= f.label(:sex, "Masculino") %>
+    <%= f.radio_button(:sex, "Femenino") %>
+    <%= f.label(:sex, "Femenino") %>
+  </div>
 
   <div class="actions">
     <%= f.submit value='Guardar', class:"btn btn-primary btn-lg" %>
